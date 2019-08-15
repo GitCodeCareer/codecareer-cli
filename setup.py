@@ -2,23 +2,23 @@
 
 import setuptools
 
-with open("README", "r") as fh:
+with open("README.md", "r") as fh:
     long_description = fh.read()
 
 with open("LICENSE", "r") as fh:
     source_license = fh.read()
 
 setuptools.setup(
-        name='Duel Eclipse CLI',
+        name='CodeCareer CLI',
         version='1.0.0',
-        description='Generate new Duel Eclipse projects with ease',
+        description='A command-line utility for interacting with CodeCareer things',
         long_description=long_description,
         license=source_license,
-        author='Duel Studios',
-        author_email='admin@duel.org',
-        url='https://www.github.com/duel/eclipse-cli',
+        author='CodeCareer',
+        author_email='croc122@gmail.com',
+        url='https://www.github.com/GitCodeCareer/codecareer-cli',
         packages=setuptools.find_packages(),
-        package_dir={'eclipse': 'eclipse'},
+        package_dir={'codecareer': 'codecareer'},
         python_requires=">=3.7",
         classifiers=[
             "Programming Language :: Python :: 3",
@@ -26,6 +26,6 @@ setuptools.setup(
             "Operating System :: OS Independent",
         ],
         entry_points={
-            'console_scripts': ['duel-eclipse=eclipse.main:main'],
+            'console_scripts': ['codecareer=codecareer.main:main'],
         }
     )
